@@ -47,6 +47,9 @@ export default {
   },
   data() {
     return {
+      logoUrl1 : require("@/assets/logo1.png"),
+      logoUrl2 : require("@/assets/logo2.png"),
+      logoUrl : require("@/assets/logo.png"),
       leftComponents: [
         {name: 'HomePage'},
         {name: 'Calender'},
