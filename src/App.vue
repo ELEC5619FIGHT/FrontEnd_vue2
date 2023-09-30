@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="settings-container">
-      <router-link to="/HomePage"> HomePage </router-link>
+      <el-button v-on:click="JumptoHomepage" type="primary" icon="el-icon-share"></el-button>
       <router-link to="/Calender"> Calender </router-link>
       <router-link to="/Friends"> Friends </router-link>
       <router-link to="/Setting"> Setting </router-link>
@@ -38,6 +38,11 @@ Vue.use(VueRouter)
 Vue.use(Vuex)
 
 export default {
+  methods:{
+    JumptoHomepage : function (event){
+      this.$router.push({ path: '/HomePage' })
+    }
+  },
   components: {
     HomePage,
     Calender,
