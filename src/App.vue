@@ -32,8 +32,10 @@ import Notification from './components/AppNotification.vue';
 import Privacy from './components/AppPrivacy.vue';
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Vuex from 'vuex'
 
 Vue.use(VueRouter)
+Vue.use(Vuex)
 
 export default {
   components: {
