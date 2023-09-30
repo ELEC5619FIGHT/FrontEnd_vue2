@@ -131,5 +131,44 @@ export default {
   position: absolute;
   top: 0;
   height: 100%;
-  width: 500px;}
+  width: 500px; /* ensures it takes the width of its content */
+}
+
+.timetable {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: auto;
+  right: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Add this for spacing between items */
+}
+.User.logo {
+  right: 0;
+}
+
+.logo1, .logo2 {
+  display: block;
+  max-width: 100%;
+  height: 100%; /* take full height of the parent .timetable or .User.logo */
+}
+
+.logo1, .clock {
+  flex: 1;  /* 使两者都占据相同的空间 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo1 {
+  max-width: 100%;
+  height: 100%;
+}
+
+.clock {
+  font-size: 1.5em;  /* 您可能需要调整这个大小，以使时间看起来与 logo 大小匹配 */
+  margin-left: 10px;
+  white-space: nowrap;  /* 保持时间不换行 */
+}
 </style>
