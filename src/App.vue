@@ -13,8 +13,8 @@
             v-for="component in leftComponents"
             :key="component.name"
             :is="component.name"
-            :class="{ active: activeComponent === component.name }"
-            @click="activeComponent = component.name"
+            :class ="{ active: activeComponent === component.name }"
+            v-on:click ="activeComponent = component.name"
         />
       </div>
       <div class="content">
