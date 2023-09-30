@@ -49,7 +49,7 @@ export default {
     return {
       logoUrl1 : require("@/assets/logo1.png"),
       logoUrl2 : require("@/assets/logo2.png"),
-      logoUrl : require("@/assets/logo.png"),
+      logoUrl : require("@/assets/logo-EasyDeacon.png"),
       leftComponents: [
         {name: 'HomePage'},
         {name: 'Calender'},
