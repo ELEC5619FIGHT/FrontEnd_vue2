@@ -8,18 +8,15 @@
       </div>
     </div>
     <div class="settings-container">
-      <div class="sidebar">
-        <component
-            v-for="component in leftComponents"
-            :key="component.name"
-            :is="component.name"
-            :class ="{ active: activeComponent === component.name }"
-            v-on:click ="activeComponent = component.name"
-        />
-      </div>
-      <div class="content">
-        <component v-for="component in rightComponents" :key="component.name" :is="component.name"/>
-      </div>
+      <router-link to="/HomePage"> HomePage </router-link>
+      <router-link to="/Calender"> Calender </router-link>
+      <router-link to="/Friends"> Friends </router-link>
+      <router-link to="/Setting"> Setting </router-link>
+      <router-link to="/Location"> Location </router-link>
+      <router-link to="/Type"> Type </router-link>
+      <router-link to="/Notification"> Notification </router-link>
+      <router-link to="/Privacy"> Privacy </router-link>
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -33,6 +30,10 @@ import Location from './components/AppLocation.vue';
 import Type from './components/AppType.vue';
 import Notification from './components/AppNotification.vue';
 import Privacy from './components/AppPrivacy.vue';
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
 
 export default {
   components: {
